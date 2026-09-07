@@ -1,0 +1,19 @@
+# Sensitive credentials — never commit these
+.env
+.env.*
+!.env.example
+
+# Dependencies (reinstallable via npm install)
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/

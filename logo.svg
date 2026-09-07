@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="logo-title logo-description">
+  <title id="logo-title">Excellent Opportunities Recruitment &amp; Relocation</title>
+  <desc id="logo-description">The EO logo for Excellent Opportunities Recruitment and Relocation.</desc>
+  <circle cx="50" cy="50" r="46" fill="#102a43" stroke="#c48b28" stroke-width="4"/>
+  <circle cx="50" cy="50" r="38" fill="none" stroke="#fff" stroke-dasharray="4 4" stroke-width="2"/>
+  <text x="50" y="58" fill="#c48b28" font-family="Segoe UI, sans-serif" font-size="28" font-weight="900" text-anchor="middle">EO</text>
+  <polygon fill="#fff" points="50,23 53,30 60,30 54,34 56,41 50,37 44,41 46,34 40,30 47,30"/>
+</svg>

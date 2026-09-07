@@ -1,0 +1,150 @@
+/* ===== GLOBAL CSS RESET — prevents horizontal overflow & sticky spacing ===== */
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    scroll-padding-top: 100px;
+    /* Prevent fixed/sticky header from covering anchored headings */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+
+div[id], section[id] {
+    scroll-margin-top: 0;
+    /* Offset now handled by html scroll-padding-top (100px) — keep these additive-safe */
+}
+
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #102a43;
+}
+
+
+.brand-text span:nth-child(2) {
+    color: #102a43;
+    max-width: 100%;
+    font-weight: bold;
+}
+
+
+.brand-text span:last-child {
+    color: #ffb700;
+    max-width: 100%;
+    font-size: 0.7rem;
+    font-weight: normal;
+}
+ .sponsor-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.compact-sponsor-card {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 10px;
+}
+
+/* ===== EMPLOYER SECTION: centered & width-capped ===== */
+#employer-section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 600px;
+}
+/* Back to Top Button Styles */
+#backToTopBtn {
+  display: none; 
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+}
+
+#backToTopBtn:hover {
+  background-color: #1a252f;
+}
+
+/* Mobile size optimization */
+@media screen and (max-width: 768px) {
+  #backToTopBtn {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 14px;
+    font-size: 16px;
+  }
+}
+/* Footer Styles */
+.site-footer {
+  background-color: #1f2937;
+  color: #9ca3af;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  border-top: 1px solid #374151;
+}
+
+.site-footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-footer .footer-links {
+  margin-top: 10px;
+}
+
+.site-footer .footer-links a {
+  color: #d1d5db;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.2s;
+}
+
+.site-footer .footer-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Mobile Footer adjustments */
+@media screen and (max-width: 768px) {
+  .site-footer {
+    padding: 20px 15px;
+    font-size: 0.8rem;
+  }
+  .site-footer .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+  }
+}
+.employer-section { 
+    margin-top: 20px;
+}
